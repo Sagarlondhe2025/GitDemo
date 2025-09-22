@@ -1,0 +1,7 @@
+datasources:b257782150c4156438df9fef6d556cc7e540d57d
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:4846c8508e42f45cdb019380f5bb977f10f8a91c
+--test TestDemo7.Validate Login Form
+--test TestDemo7.Validate Cards Display in Shopping Page
+--test TestDemo7.Login with User Tab

@@ -1,0 +1,23 @@
+==============================================================================
+TestDemo7 :: To Validate Login Form                                           
+==============================================================================
+Validate Cards Display in Shopping Page                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Sagar\PycharmProjects\PythonProject\Test\TestDemo7.robot:25
+    T:  Validate Cards Display in Shopping Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Sagar\PycharmProjects\PythonProject\Test\TestDemo7.robot:32
+      Procced with checkout    ${country_Name}
+      |  ${country_Name} = India (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Sagar\PycharmProjects\PythonProject\PO\CheckoutPage.robot:20
+      Select Checkbox    //div[@class='checkbox checkbox-primary']/label
+______________________________________________________________________________
+| FAIL |
+Checkbox with locator '//div[@class='checkbox checkbox-primary']/label' not found.
+------------------------------------------------------------------------------
+TestDemo7 :: To Validate Login Form                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Sagar\PycharmProjects\PythonProject\Test\pabot_results\1\output.xml

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T19:27:32.938364" rpa="false" schemaversion="5">
+<suite id="s1" name="TestDemo7" source="C:\Users\Sagar\PycharmProjects\PythonProject\Test\TestDemo7.robot">
+<test id="s1-t1" name="Login with User Tab" line="35">
+<kw name="open the browser with mortigate payment url" owner="Generic_resource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:33.602268" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<arg>${browsername}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-09-15T19:27:33.601653" elapsed="4.162315"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:37.765051" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-15T19:27:37.764523" elapsed="2.723642"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-15T19:27:40.492352" elapsed="0.357092"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T19:27:45.850660" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T19:27:40.849895" elapsed="5.001029"/>
+</kw>
+<arg>${browser_name}</arg>
+<status status="PASS" start="2025-09-15T19:27:33.599068" elapsed="12.252118"/>
+</kw>
+<kw name="Fill the form and select user" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:45.855137" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:45.852393" elapsed="0.189610"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:46.043309" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-09-15T19:27:46.097920" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:46.042454" elapsed="0.142668"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:46.186283" level="INFO">Clicking element 'xpath://input[@value='user']'.</msg>
+<arg>xpath://input[@value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:46.185549" elapsed="0.127904"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-15T19:27:46.313775" elapsed="0.265770"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:46.580578" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:46.579942" elapsed="0.233808"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-15T19:27:46.814110" elapsed="0.310452"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:47.125964" level="INFO">Selecting options from selection list '//select[@class='form-control']' by value teach.</msg>
+<arg>//select[@class='form-control']</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-09-15T19:27:47.125223" elapsed="0.232169"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:47.358684" level="INFO">Selecting checkbox '//input[@id='terms']'.</msg>
+<arg>//input[@id='terms']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:47.357804" elapsed="0.358426"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:47.717389" level="INFO">Verifying checkbox '//input[@id='terms']' is selected.</msg>
+<arg>//input[@id='terms']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-09-15T19:27:47.716754" elapsed="0.066361"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:27:47.784244" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:27:47.783674" elapsed="0.174993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T19:27:50.959936" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T19:27:47.959014" elapsed="3.001269"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${valid_Password}</arg>
+<status status="PASS" start="2025-09-15T19:27:45.851684" elapsed="5.108983"/>
+</kw>
+<status status="PASS" start="2025-09-15T19:27:33.596756" elapsed="17.364278"/>
+</test>
+<doc>To Validate Login Form</doc>
+<status status="PASS" start="2025-09-15T19:27:32.979171" elapsed="17.982962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestDemo7" id="s1" pass="1" fail="0" skip="0">TestDemo7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

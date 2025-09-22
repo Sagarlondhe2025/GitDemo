@@ -1,0 +1,16 @@
+--test TestDemo7.Validate Login Form
+--variable CALLER_ID:0f833ceb8709449fba5e92b0f0c02bfe
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:TestDemo7.Validate Login Form
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\0
+--consolecolors off
+--consolemarkers off
+.\TestDemo7.robot
